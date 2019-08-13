@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
     var components = [Component]()
 
     override func viewDidLoad() {
@@ -30,11 +29,15 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath) as! CustomTableViewCell
         let component = components[indexPath.row]
-        cell.textLabel?.text = component.name
+        cell.nameLabel.text = component.name
+        cell.statusLabel.text = component.status.capitalized
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }
 
