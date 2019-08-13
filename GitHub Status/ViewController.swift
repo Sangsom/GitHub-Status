@@ -33,6 +33,7 @@ class ViewController: UITableViewController {
         let component = components[indexPath.row]
         let status = component.status
         cell.nameLabel.text = component.name
+        cell.detailsLabel.text = component.description
         cell.statusLabel.text = status.capitalized
 
         if status == "operational" {
