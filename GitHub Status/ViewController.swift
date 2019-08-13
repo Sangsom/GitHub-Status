@@ -31,7 +31,8 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath)
-        cell.textLabel?.text = components[indexPath.row].name
+        let component = components[indexPath.row]
+        cell.textLabel?.text = component.name
         return cell
     }
 
