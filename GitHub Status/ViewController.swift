@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UITableViewController {
+
+    @IBOutlet var titleLabel: UILabel!
+    
     var components = [Component]()
 
     override func viewDidLoad() {
