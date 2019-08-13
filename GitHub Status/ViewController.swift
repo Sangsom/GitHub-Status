@@ -8,10 +8,6 @@
 
 import UIKit
 
-enum Status {
-    case operational, degraded_performance, partial_outage, major_outage
-}
-
 class ViewController: UITableViewController {
     var components = [Component]()
 
