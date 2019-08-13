@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum Status {
+    case operational, degraded_performance, partial_outage, major_outage
+}
+
 class ViewController: UITableViewController {
     var components = [Component]()
 
@@ -31,8 +35,20 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath) as! CustomTableViewCell
         let component = components[indexPath.row]
+        let status = component.status
         cell.nameLabel.text = component.name
-        cell.statusLabel.text = component.status.capitalized
+        cell.statusLabel.text = status.capitalized
+
+        if status == "operational" {
+            cell.statusLabel.textColor = UIColor(red: 39 / 255, green: 174 / 255, blue: 96 / 255, alpha: 1)
+        } else if status == "degraded_performance" {
+            cell.statusLabel.textColor = UIColor(red: 142 / 255, green: 68 / 255, blue: 173 / 255, alpha: 1)
+        } else if status == "partial_outage" {
+            cell.statusLabel.textColor = UIColor(red: 230 / 255, green: 126 / 255, blue: 34 / 255, alpha: 1)
+        } else if status == "major_outage" {
+            cell.statusLabel.textColor = UIColor(red: 231 / 255, green: 76 / 255, blue: 60 / 255, alpha: 1)
+        }
+
         return cell
     }
 

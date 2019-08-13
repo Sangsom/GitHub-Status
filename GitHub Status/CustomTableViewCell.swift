@@ -10,7 +10,6 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
     
