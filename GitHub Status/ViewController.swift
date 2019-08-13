@@ -10,11 +10,30 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+    var components = [Component]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        NetworkController.shared.fetchComponents { (data) in
+            if let data = data {
+                DispatchQueue.main.async {
+                    self.components = data.components
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return components.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell", for: indexPath)
+        cell.textLabel?.text = components[indexPath.row].name
+        return cell
+    }
 
 }
 

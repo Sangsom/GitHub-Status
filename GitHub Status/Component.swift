@@ -11,7 +11,7 @@ import Foundation
 struct Component: Codable {
     let name: String
     let status: String
-    let description: String
+    let description: String?
 }
 
 struct Components: Codable {
