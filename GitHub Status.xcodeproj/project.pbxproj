@@ -16,6 +16,7 @@
 		1B5B21582302C2DC0086F8C8 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21572302C2DC0086F8C8 /* NetworkController.swift */; };
 		1B5B215A2302CC300086F8C8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21592302CC300086F8C8 /* CustomTableViewCell.swift */; };
 		1B5B215C2302F4C80086F8C8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B215B2302F4C80086F8C8 /* Status.swift */; };
+		1BA113CE23041A9F00B367FD /* IncidentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA113CD23041A9F00B367FD /* IncidentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B5B21572302C2DC0086F8C8 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		1B5B21592302CC300086F8C8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1B5B215B2302F4C80086F8C8 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		1BA113CD23041A9F00B367FD /* IncidentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		1B5B21372302BFBF0086F8C8 = {
 			isa = PBXGroup;
 			children = (
+				1BA113CD23041A9F00B367FD /* IncidentsTableViewController.swift */,
 				1B5B21422302BFBF0086F8C8 /* GitHub Status */,
 				1B5B21412302BFBF0086F8C8 /* Products */,
 			);
@@ -153,6 +156,7 @@
 				1B5B21562302C2450086F8C8 /* Component.swift in Sources */,
 				1B5B21442302BFBF0086F8C8 /* AppDelegate.swift in Sources */,
 				1B5B215C2302F4C80086F8C8 /* Status.swift in Sources */,
+				1BA113CE23041A9F00B367FD /* IncidentsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
