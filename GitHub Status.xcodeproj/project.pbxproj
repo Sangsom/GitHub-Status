@@ -15,6 +15,7 @@
 		1B5B21562302C2450086F8C8 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21552302C2450086F8C8 /* Component.swift */; };
 		1B5B21582302C2DC0086F8C8 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21572302C2DC0086F8C8 /* NetworkController.swift */; };
 		1B5B215A2302CC300086F8C8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21592302CC300086F8C8 /* CustomTableViewCell.swift */; };
+		1B5B215C2302F4C80086F8C8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B215B2302F4C80086F8C8 /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1B5B21552302C2450086F8C8 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		1B5B21572302C2DC0086F8C8 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		1B5B21592302CC300086F8C8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		1B5B215B2302F4C80086F8C8 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				1B5B21452302BFBF0086F8C8 /* ViewController.swift */,
 				1B5B21552302C2450086F8C8 /* Component.swift */,
 				1B5B21572302C2DC0086F8C8 /* NetworkController.swift */,
+				1B5B215B2302F4C80086F8C8 /* Status.swift */,
 				1B5B21592302CC300086F8C8 /* CustomTableViewCell.swift */,
 				1B5B21472302BFBF0086F8C8 /* Main.storyboard */,
 				1B5B214A2302BFC00086F8C8 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				1B5B21462302BFBF0086F8C8 /* ViewController.swift in Sources */,
 				1B5B21562302C2450086F8C8 /* Component.swift in Sources */,
 				1B5B21442302BFBF0086F8C8 /* AppDelegate.swift in Sources */,
+				1B5B215C2302F4C80086F8C8 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

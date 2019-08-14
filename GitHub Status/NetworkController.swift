@@ -16,11 +16,26 @@ class NetworkController {
     func fetchComponents(completion: @escaping (Components?) -> Void) {
         let url = baseURL.appendingPathComponent("components.json")
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { return }
             let decoder = JSONDecoder()
 
-            if let data = data,
-                let componentData = try? decoder.decode(Components.self, from: data){
+            if let componentData = try? decoder.decode(Components.self, from: data){
                 completion(componentData)
+            } else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+
+    func fetchStatus(completion: @escaping (StatusResponse?) -> Void) {
+        let url = baseURL.appendingPathComponent("status.json")
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { return }
+            let decoder = JSONDecoder()
+
+            if let status = try? decoder.decode(StatusResponse.self, from: data) {
+                completion(status)
             } else {
                 completion(nil)
             }

@@ -11,18 +11,26 @@ import UIKit
 class ViewController: UITableViewController {
 
     @IBOutlet var titleLabel: UILabel!
-    
+
     var components = [Component]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         NetworkController.shared.fetchComponents { (data) in
-            if let data = data {
-                DispatchQueue.main.async {
-                    self.components = data.components
-                    self.tableView.reloadData()
-                }
+            guard let data = data else { return }
+
+            DispatchQueue.main.async {
+                self.components = data.components
+                self.tableView.reloadData()
+            }
+        }
+
+        NetworkController.shared.fetchStatus { (data) in
+            guard let data = data else { return }
+
+            DispatchQueue.main.async {
+                self.titleLabel.text = data.status.description
             }
         }
     }
