@@ -42,4 +42,19 @@ class NetworkController {
         }
         task.resume()
     }
+
+    func fetchIncidentts(completion: @escaping (Incidents?) -> Void) {
+        let url = baseURL.appendingPathComponent("incidents.json")
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { return }
+            let decoder = JSONDecoder()
+
+            if let incidents = try? decoder.decode(Incidents.self, from: data) {
+                completion(incidents)
+            } else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
 }

@@ -50,7 +50,6 @@
 		1B5B21372302BFBF0086F8C8 = {
 			isa = PBXGroup;
 			children = (
-				1BA113CD23041A9F00B367FD /* IncidentsTableViewController.swift */,
 				1B5B21422302BFBF0086F8C8 /* GitHub Status */,
 				1B5B21412302BFBF0086F8C8 /* Products */,
 			);
@@ -67,6 +66,7 @@
 		1B5B21422302BFBF0086F8C8 /* GitHub Status */ = {
 			isa = PBXGroup;
 			children = (
+				1BA113CD23041A9F00B367FD /* IncidentsTableViewController.swift */,
 				1B5B21432302BFBF0086F8C8 /* AppDelegate.swift */,
 				1B5B21452302BFBF0086F8C8 /* ViewController.swift */,
 				1B5B21552302C2450086F8C8 /* Component.swift */,
