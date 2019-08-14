@@ -19,9 +19,9 @@ class ViewController: UITableViewController {
 
         NetworkController.shared.fetchComponents { (data) in
             guard let data = data else { return }
-
+            let filteredComponents = data.components.filter { $0.id != "0l2p9nhqnxpd" }
             DispatchQueue.main.async {
-                self.components = data.components
+                self.components = filteredComponents
                 self.tableView.reloadData()
             }
         }

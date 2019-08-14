@@ -9,10 +9,10 @@
 import Foundation
 
 struct StatusResponse: Codable {
-    var status: Status
+    let status: Status
 }
 
 struct Status: Codable {
-    var description: String
-    var indicator: String
+    let description: String
+    let indicator: String
 }
