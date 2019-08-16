@@ -25,8 +25,10 @@ class IncidentUpdatesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let incident = incidentUpdates[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "IncidentUpdateCell", for: indexPath)
-        cell.textLabel?.text = incident.body
+        let cell = tableView.dequeueReusableCell(withIdentifier: "IncidentUpdateCell", for: indexPath) as! IncidentUpdatedDetailsCell
+        cell.idLabel.text = "ID: \(incident.id)"
+        cell.statusLabel.text = "Status: \(incident.status)"
+        cell.bodyLabel.text = "Body: \(incident.body)"
         return cell
     }
 

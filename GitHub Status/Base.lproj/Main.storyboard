@@ -173,7 +173,43 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w5M-lT-fNt" id="4yh-b2-jxK">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-sK-CoD">
+                                            <rect key="frame" x="20" y="11" width="374" height="118"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRv-Ch-HOu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIT-7F-yXP">
+                                                    <rect key="frame" x="0.0" y="77" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-mf-ANp">
+                                                    <rect key="frame" x="0.0" y="97.5" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zbg-sK-CoD" firstAttribute="top" secondItem="4yh-b2-jxK" secondAttribute="topMargin" id="AYk-tq-MjQ"/>
+                                        <constraint firstItem="Zbg-sK-CoD" firstAttribute="leading" secondItem="4yh-b2-jxK" secondAttribute="leadingMargin" id="WEZ-rE-foG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zbg-sK-CoD" secondAttribute="bottom" id="cZW-Sn-Dgb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Zbg-sK-CoD" secondAttribute="trailing" id="qke-rb-bRa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyLabel" destination="Q4g-mf-ANp" id="hx2-Lh-pvw"/>
+                                    <outlet property="idLabel" destination="PRv-Ch-HOu" id="duf-vG-Gty"/>
+                                    <outlet property="statusLabel" destination="WIT-7F-yXP" id="yG5-J9-2fR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
