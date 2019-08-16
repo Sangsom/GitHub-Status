@@ -43,7 +43,9 @@ class IncidentsTableViewController: UITableViewController {
         if segue.identifier == "UpdatedIncidentsSegue" {
             let vc = segue.destination as! IncidentUpdatesTableViewController
             let index = tableView.indexPathForSelectedRow?.row
-            vc.incidentUpdates = incidents[index!].incidentUpdates
+            let incident = incidents[index!]
+            vc.incidentUpdates = incident.incidentUpdates
+            vc.incidentName = incident.name
         }
     }
 

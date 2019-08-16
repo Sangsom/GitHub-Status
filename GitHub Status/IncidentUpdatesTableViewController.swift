@@ -11,9 +11,12 @@ import UIKit
 class IncidentUpdatesTableViewController: UITableViewController {
 
     var incidentUpdates = [IncidentUpdate]()
+    var incidentName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navigationItem.title = incidentName
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,8 +24,9 @@ class IncidentUpdatesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let incident = incidentUpdates[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "IncidentUpdateCell", for: indexPath)
-        cell.textLabel?.text = incidentUpdates[indexPath.row].body
+        cell.textLabel?.text = incident.body
         return cell
     }
 
