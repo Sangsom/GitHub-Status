@@ -15,4 +15,11 @@ struct Incidents: Codable {
 struct Incident: Codable {
     let name: String
     let status: String
+    let incident_updates: [IncidentUpdate]
+}
+
+struct IncidentUpdate: Codable {
+    let body: String
+    let status: String
+    let updated_at: String
 }
