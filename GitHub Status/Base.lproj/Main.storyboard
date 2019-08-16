@@ -151,17 +151,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="kGo-O7-RZN"/>
                     <connections>
-                        <segue destination="Dty-ie-w6R" kind="show" id="rFw-le-e88"/>
+                        <segue destination="Dty-ie-w6R" kind="show" identifier="UpdatedIncidentsSegue" id="XwE-ZN-u7g"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPH-oB-0dB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2397.1014492753625" y="482.8125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Incident Updates Table View Controller-->
         <scene sceneID="jAD-wq-XHn">
             <objects>
-                <tableViewController id="Dty-ie-w6R" sceneMemberID="viewController">
+                <tableViewController id="Dty-ie-w6R" customClass="IncidentUpdatesTableViewController" customModule="GitHub_Status" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zjj-cN-MEN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -35,4 +35,16 @@ class IncidentsTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "UpdatedIncidentsSegue", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "UpdatedIncidentsSegue" {
+            let vc = segue.destination as! IncidentUpdatesTableViewController
+            let index = tableView.indexPathForSelectedRow?.row
+            vc.incidentUpdates = incidents[index!].incidentUpdates
+        }
+    }
+
 }

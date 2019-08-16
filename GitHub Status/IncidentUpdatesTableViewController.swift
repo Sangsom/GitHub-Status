@@ -10,6 +10,8 @@ import UIKit
 
 class IncidentUpdatesTableViewController: UITableViewController {
 
+    var incidentUpdates = [IncidentUpdate]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
