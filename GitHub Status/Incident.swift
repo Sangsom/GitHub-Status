@@ -26,12 +26,14 @@ struct Incident: Codable {
 
 struct IncidentUpdate: Codable {
     let id: String
+    let incidentId: String
     let body: String
     let status: String
     let updatedAt: String
 
     enum CodingKeys: String, CodingKey {
         case id
+        case incidentId = "incident_id"
         case body
         case status
         case updatedAt = "updated_at"

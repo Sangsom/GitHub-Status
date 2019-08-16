@@ -11,7 +11,9 @@ import UIKit
 class IncidentUpdatedDetailsCell: UITableViewCell {
 
     @IBOutlet var idLabel: UILabel!
+    @IBOutlet var incidentIdLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
     @IBOutlet var bodyLabel: UILabel!
-
+    @IBOutlet var updatedAtLabel: UILabel!
+    
 }
