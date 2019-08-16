@@ -15,11 +15,23 @@ struct Incidents: Codable {
 struct Incident: Codable {
     let name: String
     let status: String
-    let incident_updates: [IncidentUpdate]
+    let incidentUpdates: [IncidentUpdate]
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case status
+        case incidentUpdates = "incident_updates"
+    }
 }
 
 struct IncidentUpdate: Codable {
     let body: String
     let status: String
-    let updated_at: String
+    let updatedAt: String
+
+    enum CodingKeys: String, CodingKey {
+        case body
+        case status
+        case updatedAt = "updated_at"
+    }
 }
