@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B212AE52306A061002B8D83 /* IncidentUpdatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B212AE42306A061002B8D83 /* IncidentUpdatesTableViewController.swift */; };
+		1B212AE72306B6DE002B8D83 /* IncidentUpdatedDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B212AE62306B6DE002B8D83 /* IncidentUpdatedDetailsCell.swift */; };
 		1B5B21442302BFBF0086F8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21432302BFBF0086F8C8 /* AppDelegate.swift */; };
 		1B5B21462302BFBF0086F8C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B21452302BFBF0086F8C8 /* ViewController.swift */; };
 		1B5B21492302BFBF0086F8C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B21472302BFBF0086F8C8 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1B212AE42306A061002B8D83 /* IncidentUpdatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentUpdatesTableViewController.swift; sourceTree = "<group>"; };
+		1B212AE62306B6DE002B8D83 /* IncidentUpdatedDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentUpdatedDetailsCell.swift; sourceTree = "<group>"; };
 		1B5B21402302BFBF0086F8C8 /* GitHub Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5B21432302BFBF0086F8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B5B21452302BFBF0086F8C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				1B5B215B2302F4C80086F8C8 /* Status.swift */,
 				1B5B21472302BFBF0086F8C8 /* Main.storyboard */,
 				1B212AE42306A061002B8D83 /* IncidentUpdatesTableViewController.swift */,
+				1B212AE62306B6DE002B8D83 /* IncidentUpdatedDetailsCell.swift */,
 				1B5B214A2302BFC00086F8C8 /* Assets.xcassets */,
 				1B5B214C2302BFC00086F8C8 /* LaunchScreen.storyboard */,
 				1B5B214F2302BFC00086F8C8 /* Info.plist */,
@@ -158,6 +161,7 @@
 			files = (
 				1B212AE52306A061002B8D83 /* IncidentUpdatesTableViewController.swift in Sources */,
 				1B5B21582302C2DC0086F8C8 /* NetworkController.swift in Sources */,
+				1B212AE72306B6DE002B8D83 /* IncidentUpdatedDetailsCell.swift in Sources */,
 				1B5B215A2302CC300086F8C8 /* CustomTableViewCell.swift in Sources */,
 				1B5B21462302BFBF0086F8C8 /* ViewController.swift in Sources */,
 				1B5B21562302C2450086F8C8 /* Component.swift in Sources */,
