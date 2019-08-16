@@ -113,19 +113,20 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="b9P-Wh-e8F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oaz-TK-tgB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="r1n-pi-Guf" kind="relationship" relationship="viewControllers" id="AqF-zD-s4J"/>
-                        <segue destination="BIg-6b-VEp" kind="relationship" relationship="viewControllers" id="llq-bB-eAL"/>
+                        <segue destination="EDB-1V-qDd" kind="relationship" relationship="viewControllers" id="llq-bB-eAL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Mu-9A-vIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="279.71014492753625" y="184.82142857142856"/>
         </scene>
-        <!--Incidents-->
+        <!--Incidents Table View Controller-->
         <scene sceneID="TAC-nV-C4e">
             <objects>
                 <tableViewController id="BIg-6b-VEp" customClass="IncidentsTableViewController" customModule="GitHub_Status" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,11 +149,30 @@
                             <outlet property="delegate" destination="BIg-6b-VEp" id="C4I-WK-WOZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Incidents" id="QEl-mW-RRj"/>
+                    <navigationItem key="navigationItem" id="kGo-O7-RZN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPH-oB-0dB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="483"/>
+            <point key="canvasLocation" x="2397.1014492753625" y="482.8125"/>
+        </scene>
+        <!--Incidents-->
+        <scene sceneID="KcZ-iI-TAf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EDB-1V-qDd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Incidents" id="QEl-mW-RRj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ady-gg-L2z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BIg-6b-VEp" kind="relationship" relationship="rootViewController" id="87I-eY-Shg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRw-Lv-4S9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486.9565217391305" y="482.8125"/>
         </scene>
     </scenes>
 </document>
