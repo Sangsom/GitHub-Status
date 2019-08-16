@@ -15,6 +15,8 @@ class IncidentsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "Past Incidents"
+
         NetworkController.shared.fetchIncidentts { (data) in
             guard let data = data else { return }
 
